@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-basecolor: #105aa1;
+      }
+    </style>
+  </head>
+
+  <body class="font-sans">
+    <div
+      class="flex w-full items-center justify-center h-screen bg-[url('./bg.png')] bg-cover"
+    >
+      <div class="w-5/6 flex items-center">
+        <div class="w-full flex flex-col gap-4 p-8">
+          <span class="text-xl font-bold">
+            MyPLC - Product Listing Certification
+          </span>
+          <span>
+            <strong
+              >Welcome to the IAPMO Group’s Product Listing Certification
+              platform.</strong
+            >
+            Through this portal, customers will be able to monitor the status of
+            their product listings, apply for new IAPMO product listings (These
+            certifications cover several markets) and access the many other
+            services that the IAPMO Group offer.
+          </span>
+        </div>
+
+        <div class="w-full flex flex-col gap-2 p-8">
+          <div class="flex justify-center">
+            <img src="./company_logo.png" class="w-[216px]" />
+          </div>
+          <!-- body form -->
+          <div>
+            <div class="flex flex-col">
+              <span>Username</span>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none">
+                  <div class="w-5 h-5 bg-[url('./icon/profile.png')] bg-no-repeat bg-center bg-contain"></div>
+                </div>
+                <input type="text" class="w-full pl-8 border-b p-2 focus:border-basecolor focus:outline-none" />
+              </div>
+          </div>
+
+          <div class="flex flex-col">
+            <span>Password</span>
+            <div class="relative">
+              <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none">
+                <div class="w-5 h-5 bg-[url('./icon/pass.png')] bg-no-repeat bg-center bg-contain"></div>
+              </div>
+              <input type="text" class="w-full pl-8 border-b p-2 focus:border-basecolor focus:outline-none" />
+            </div>
+          </div>
+
+          <div>
+            <div class="flex gap-2 text-basecolor justify-end mt-3">
+              <div>Forgot Password ?</div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col mt-3">
+              <a href="./dashboard.html">
+                <button class="w-full bg-basecolor text-white p-3 rounded-full font-bold shadow-md cursor-pointer">
+                  Sign in
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
