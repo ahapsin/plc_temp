@@ -7,20 +7,21 @@
     <style type="text/tailwindcss">
       @theme {
         --color-basecolor: #105aa1;
+        --color-textbase: #454747;
       }
     </style>
   </head>
 
   <body class="font-sans">
     <div
-      class="flex w-full items-center justify-center h-screen bg-[url('./bg.png')] bg-cover"
+      class="flex w-full items-center justify-center h-screen bg-[url('./assets/bg.png')] bg-cover"
     >
-      <div class="w-5/6 flex items-center">
-        <div class="w-full flex flex-col gap-4 p-8">
+      <div class="flex items-center gap-[142px]">
+        <div class="w-[822px] flex flex-col gap-4 p-8">
           <span class="text-xl font-bold">
             MyPLC - Product Listing Certification
           </span>
-          <span>
+          <span class="w-[844px]">
             <strong
               >Welcome to the IAPMO Group’s Product Listing Certification
               platform.</strong
@@ -32,14 +33,14 @@
           </span>
         </div>
 
-        <div class="w-full flex flex-col gap-2 p-8">
+        <div class="w-[488px] flex flex-col">
           <div class="flex justify-center">
-            <img src="./company_logo.png" class="w-[216px]" />
+            <img src="./assets/company_logo.png" class="w-[216px] h-[105px]" />
           </div>
           <!-- body form -->
           <div>
-            <div class="flex flex-col">
-              <span>Username</span>
+            <div class="flex flex-col mt-[94px]">
+              <span class="color-textbase">Username</span>
               <div class="relative">
                 <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none">
                   <div class="w-5 h-5 bg-[url('./icon/profile.png')] bg-no-repeat bg-center bg-contain"></div>
@@ -47,9 +48,9 @@
                 <input type="text" class="w-full pl-8 border-b p-2 focus:border-basecolor focus:outline-none" />
               </div>
           </div>
-
+          <div class="h-[33px]"></div>
           <div class="flex flex-col">
-            <span>Password</span>
+            <span class="color-textbase">Password</span>
             <div class="relative">
               <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none">
                 <div class="w-5 h-5 bg-[url('./icon/pass.png')] bg-no-repeat bg-center bg-contain"></div>
@@ -59,12 +60,12 @@
           </div>
 
           <div>
-            <div class="flex gap-2 text-basecolor justify-end mt-3">
+            <div class="flex gap-2 text-basecolor justify-end mt-[31px]">
               <div>Forgot Password ?</div>
             </div>
           </div>
           <div>
-            <div class="flex flex-col mt-3">
+            <div class="flex flex-col mt-[46px]">
               <a href="./dashboard.html">
                 <button class="w-full bg-basecolor text-white p-3 rounded-full font-bold shadow-md cursor-pointer">
                   Sign in
