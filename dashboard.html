@@ -285,16 +285,44 @@
             <div class="flex gap-4 px-[28px]">
               <div class="w-1/2 flex flex-col gap-4">
 
-                <div class="shadow rounded-lg">
-                  <div class="relative bg-[#F8F9FB] rounded-lg p-2 border-red-500 flex items-center gap-2 font-semibold justify-between">
+                <div class="shadow rounded-lg relative">
+                  <div class="relative bg-[#F8F9FB] rounded-lg p-2 flex items-center gap-2 font-semibold justify-between">
                     <div class="absolute -left-0.5 top-2 gap-2 items-center">
                       <div class="w-[6px] h-[40px] bg-[#F66160] rounded-full"></div>
                     </div>
                     <span class="px-[10px] py-[8px]">Action Items Assigned</span>
-                    <div class="flex items-center px-2 pe-2 w-[40px]">
-                      <img src="./assets/more.svg"/>
+                    
+                    <div class="relative">
+                      <div class="flex items-center px-2 pe-2 w-[40px] cursor-pointer" onclick="toggleDropdown1()">
+                        <img src="./assets/more.svg" />
+                      </div>
+
+                      <div id="dropdownMenu1" class="hidden absolute right-0 mt-2 w-[174px] bg-white border border-gray-200 rounded-lg shadow-lg z-50 p-[20px_16px] box-border">
+                        <ul class="text-gray-700 space-y-2">
+                          <li>
+                            <div class="flex items-center p-2 rounded">
+                              <div class="toggle-submenu w-[24px] h-[24px] rounded-full bg-[url('./icon/mdi_pin-outline.svg')] bg-no-repeat bg-center bg-contain"></div>
+                              <span class="ml-[10px] text-sm truncate">Pin Widget</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="flex items-center p-2 rounded">
+                              <div class="toggle-submenu w-[24px] h-[24px] rounded-full bg-[url('./icon/Vector.svg')] bg-no-repeat bg-center bg-contain"></div>
+                              <span class="ml-[10px] text-sm truncate">Setting</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="flex items-center p-2 rounded">
+                              <div class="toggle-submenu w-[24px] h-[24px] rounded-full bg-[url('./icon/tabler_trash.svg')] bg-no-repeat bg-center bg-contain"></div>
+                              <span class="ml-[10px] text-sm truncate">Delete</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      
                     </div>
                   </div>
+
                   <div class="bg-white p-4 rounded-b-lg ">
                     <div class="border rounded-lg border-[#DBDFE2] text-[#64748B] overflow-auto">
                       <table class="w-full">
@@ -338,7 +366,7 @@
                               <a href="#" class="text-blue-500">Application #32345</a>
                             </td>
                           </tr>
-                         
+                          
                         </tbody>
                       </table>
                       <div class="flex justify-between items-center p-2 text-[12px]">
@@ -361,20 +389,49 @@
                   </div>
                 </div>
 
-                 <div class="shadow rounded-lg">
-                  <div class="relative bg-[#F8F9FB] rounded-lg p-2 border-red-500 flex items-center gap-2 font-semibold justify-between">
+                <div class="shadow rounded-lg relative">
+                  <div class="relative bg-[#F8F9FB] rounded-lg p-2 flex items-center gap-2 font-semibold justify-between">
                     <div class="absolute -left-0.5 top-2 gap-2 items-center">
                       <div class="w-[6px] h-[40px] bg-[#3B74DE] rounded-full"></div>
                     </div>
                     <span class="px-[10px] py-[8px]">Application Statuses Chart</span>
-                    <div class="flex items-center px-2 pe-2 w-[40px]">
-                      <img src="./assets/more.svg"/>
+                    
+                    <div class="relative">
+                      <div class="flex items-center px-2 pe-2 w-[40px] cursor-pointer" onclick="toggleDropdown()">
+                        <img src="./assets/more.svg" />
+                      </div>
+
+                      <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-[174px] bg-white border border-gray-200 rounded-lg shadow-lg z-50 p-[20px_16px] box-border">
+                        <ul class="text-gray-700 space-y-2">
+                          <li>
+                            <div class="flex items-center p-2 rounded">
+                              <div class="toggle-submenu w-[24px] h-[24px] rounded-full bg-[url('./icon/mdi_pin-outline.svg')] bg-no-repeat bg-center bg-contain"></div>
+                              <span class="ml-[10px] text-sm truncate">Pin Widget</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="flex items-center p-2 rounded">
+                              <div class="toggle-submenu w-[24px] h-[24px] rounded-full bg-[url('./icon/Vector.svg')] bg-no-repeat bg-center bg-contain"></div>
+                              <span class="ml-[10px] text-sm truncate">Setting</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="flex items-center p-2 rounded">
+                              <div class="toggle-submenu w-[24px] h-[24px] rounded-full bg-[url('./icon/tabler_trash.svg')] bg-no-repeat bg-center bg-contain"></div>
+                              <span class="ml-[10px] text-sm truncate">Delete</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      
                     </div>
                   </div>
+
                   <div class="bg-white p-8">
                     <img src="./assets/chart.svg" />
                   </div>
                 </div>
+
               </div>
 
               <div class="w-1/2 flex flex-col gap-4">
@@ -582,8 +639,6 @@
           }
         });
 
-
-
         $(".menu-item").on("click", function () {
           $(".menu-item")
             .removeClass("bg-white text-black text-[#062D6B] font-semibold")
@@ -610,6 +665,24 @@
           // Toggle the submenu right after the parent .menu-item
           $(this).closest(".menu-item").next(".submenu").slideToggle(200);
         });
+      });
+
+      function toggleDropdown() {
+        const dropdown = document.getElementById('dropdownMenu');
+        dropdown.classList.toggle('hidden');
+      }
+
+      function toggleDropdown1() {
+        const dropdown = document.getElementById('dropdownMenu1');
+        dropdown.classList.toggle('hidden');
+      }
+
+      document.addEventListener('click', function(event) {
+        const dropdown = document.getElementById('dropdownMenu');
+        const button = event.target.closest('[onclick="toggleDropdown()"]');
+        if (!dropdown.contains(event.target) && !button) {
+          dropdown.classList.add('hidden');
+        }
       });
     </script>
   </body>
