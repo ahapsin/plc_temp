@@ -13,10 +13,7 @@
         color:green;
       }
     </style>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   </head>
   <body>
     <div class="relative w-full h-screen">
@@ -287,6 +284,7 @@
 
             <div class="flex gap-4 px-[28px]">
               <div class="w-1/2 flex flex-col gap-4">
+
                 <div class="shadow rounded-lg">
                   <div class="relative bg-[#F8F9FB] rounded-lg p-2 border-red-500 flex items-center gap-2 font-semibold justify-between">
                     <div class="absolute -left-0.5 top-2 gap-2 items-center">
@@ -362,16 +360,15 @@
                     </div>
                   </div>
                 </div>
-                <div class="shadow rounded-lg overflow-clip">
-                  <div class="bg-[#F8F9FB] p-2 border-red-500 flex items-center gap-2 font-bold justify-between">
-                    <div class="flex gap-2 items-center">
-                      <div
-                        class="w-[6px] h-[32px] bg-blue-500 rounded-full"
-                      ></div>
-                      Application Statuses Chart
+
+                 <div class="shadow rounded-lg">
+                  <div class="relative bg-[#F8F9FB] rounded-lg p-2 border-red-500 flex items-center gap-2 font-semibold justify-between">
+                    <div class="absolute -left-0.5 top-2 gap-2 items-center">
+                      <div class="w-[6px] h-[40px] bg-[#3B74DE] rounded-full"></div>
                     </div>
+                    <span class="px-[10px] py-[8px]">Application Statuses Chart</span>
                     <div class="flex items-center px-2 pe-2 w-[40px]">
-                      <img src="./assets/more.svg" />
+                      <img src="./assets/more.svg"/>
                     </div>
                   </div>
                   <div class="bg-white p-8">
@@ -576,11 +573,16 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(document).ready(function () {
-        $(".menu-item").each(function () {
-          if (!$(this).hasClass("bg-white")) {
-            this.style.setProperty("--color-basecolor", "#BABEC3"); // inactive gray
+       $(".menu-item").each(function () {
+          if ($(this).hasClass("bg-white")) {
+            $(this).css("color", "#062D6B").addClass("font-semibold");
+          } else {
+            this.style.setProperty("--color-basecolor", "#BABEC3");
+            $(this).css("color", "").removeClass("font-semibold");
           }
         });
+
+
 
         $(".menu-item").on("click", function () {
           $(".menu-item")
@@ -588,18 +590,16 @@
             .addClass("text-textbase");
           
           $(".menu-item").each(function () {
-            this.style.setProperty("--color-basecolor", "#BABEC3"); // inactive gray
+            this.style.setProperty("--color-basecolor", "#BABEC3");
             $(this).css("color", ""); // remove inline color if any
           });
 
-          // Set clicked item to active state
           $(this)
             .addClass("bg-white font-semibold text-[#062D6B]")
             .removeClass("text-textbase");
 
           this.style.setProperty("--color-basecolor", "#062D6B");
 
-          // Toggle submenu and icon rotation
           $(this).next(".submenu").slideToggle(200);
           $(this).find(".toggle-submenu").toggleClass("rotate-180");
         });
