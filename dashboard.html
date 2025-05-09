@@ -19,14 +19,16 @@
     <div class="relative w-full h-screen">
       <div class="h-[84px] flex items-center bg-white shadow justify-between">
         <div class="flex gap-4 items-center ms-[24px]">
-          <div class="w-[20px] h-[20px] bg-[url('./icon/burger.png')]"></div>
+          <div class="w-[20px] h-[20px] bg-[url('./icon/burger.svg')]"></div>
           <div
-            class="w-[91px] h-[44px] bg-[url('./assets/company_logo.png')] bg-size-[91px]"
+            class="w-[91px] h-[44px] bg-[url('./assets/company_logo.svg')] bg-size-[91px]"
           ></div>
         </div>
-        <div
-          class="w-[160px] h-[40px] bg-[url('./assets/user-account.png')] bg-no-repeat me-[24px]"
-        ></div>
+       <div class="flex me-[24px] gap-[32px] items-center">
+          <div class="w-[28px] h-[28px] bg-[url('./assets/search.svg')] bg-no-repeat"></div>
+          <div class="w-[28px] h-[28px] bg-[url('./assets/bx_bell.svg')] bg-no-repeat"></div>
+          <div class="w-[40px] h-[40px] bg-[url('./assets/users.svg')] bg-no-repeat"></div>
+        </div>
       </div> 
 
       <div class="flex">
@@ -37,7 +39,9 @@
             class="menu-item flex justify-between bg-white rounded-md p-2 text-[12px]"
           >
             <div class="flex gap-2">
-              <div class="fa fa-home" style="font-size: 20px"></div>
+            <div class="w-[20px] h-[20px] text-blue-500">
+              <img src='./side/client.svg'>
+            </div>
               <span>Dashboard</span>
             </div>
           </div>
@@ -46,9 +50,9 @@
             class="menu-item flex justify-between rounded-md p-2 text-[12px] text-textbase"
           >
             <div class="flex gap-2">
-              <div
-                class="w-[20px] h-[20px] bg-[url('./side/client.svg')]"
-              ></div>
+              <div class="w-[20px] h-[20px] text-blue-500">
+                <img src='./side/client.svg'>
+                </div>
               <span>Client</span>
             </div>
           </div>
@@ -58,12 +62,12 @@
           >
             <div class="flex gap-2">
               <div
-                class="w-[20px] h-[20px] bg-[url('./side/akar-icons_file.png')]"
+                class="w-[20px] h-[20px] bg-[url('./side/akar-icons_file.svg')]"
               ></div>
               <span>Applications</span>
             </div>
             <div
-              class="toggle-submenu w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.png')]"
+              class="toggle-submenu w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.svg')]"
             ></div>
           </div>
 
@@ -85,12 +89,12 @@
           >
             <div class="flex gap-2">
               <div
-                class="w-[20px] h-[20px] bg-[url('./side/tabler_refresh.png')]"
+                class="w-[20px] h-[20px] bg-[url('./side/tabler_refresh.svg')]"
               ></div>
               <span>Renewals</span>
             </div>
             <div
-              class="toggle-submenu w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.png')]"
+              class="toggle-submenu w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.svg')]"
             ></div>
           </div>
 
@@ -104,12 +108,12 @@
           >
             <div class="flex gap-2">
               <div
-                class="toggle-submenu w-[20px] h-[20px] bg-[url('./side/tabler_files.png')]"
+                class="toggle-submenu w-[20px] h-[20px] bg-[url('./side/tabler_files.svg')]"
               ></div>
               <span>Files</span>
             </div>
             <div
-              class="w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.png')]"
+              class="w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.svg')]"
             ></div>
           </div>
 
@@ -123,12 +127,12 @@
           >
             <div class="flex gap-2">
               <div
-                class="w-[20px] h-[20px] bg-[url('./side/flowbite_folder-outline.png')]"
+                class="w-[20px] h-[20px] bg-[url('./side/flowbite_folder-outline.svg')]"
               ></div>
               <span>Projects</span>
             </div>
             <div
-              class="toggle-submenu w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.png')]"
+              class="toggle-submenu w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.svg')]"
             ></div>
           </div>
 
@@ -142,7 +146,7 @@
           >
             <div class="flex gap-2">
               <div
-                class="w-[20px] h-[20px] bg-[url('./side/cuida_ambulance-outline.png')]"
+                class="w-[20px] h-[20px] bg-[url('./side/cuida_ambulance-outline.svg')]"
               ></div>
               <span>Standards</span>
             </div>
@@ -153,12 +157,12 @@
           >
             <div class="flex gap-2">
               <div
-                class="w-[20px] h-[20px] bg-[url('./side/mingcute_location-line.png')]"
+                class="w-[20px] h-[20px] bg-[url('./side/mingcute_location-line.svg')]"
               ></div>
               <span>Inspection Locations</span>
             </div>
             <div
-              class="toggle-submenu w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.png')]"
+              class="toggle-submenu w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.svg')]"
             ></div>
           </div>
 
@@ -171,13 +175,12 @@
             class="menu-item flex justify-between rounded-md p-2 text-[12px] text-textbase"
           >
             <div class="flex gap-2">
-              <div
-                class="w-[20px] h-[20px] bg-[url('./side/akar-icons_edit.png')]"
+              <div class="w-[20px] h-[20px] bg-[url('./side/akar-icons_edit.svg')]"
               ></div>
               <span>NCR Test Report</span>
             </div>
             <div
-              class="toggle-submenu w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.png')]"
+              class="toggle-submenu w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.svg')]"
             ></div>
           </div>
 
@@ -191,12 +194,12 @@
           >
             <div class="flex gap-2">
               <div
-                class="w-[20px] h-[20px] bg-[url('./side/hugeicons_invoice.png')]"
+                class="w-[20px] h-[20px] bg-[url('./side/hugeicons_invoice.svg')]"
               ></div>
               <span>Invoices</span>
             </div>
             <div
-              class="toggle-submenu w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.png')]"
+              class="toggle-submenu w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.svg')]"
             ></div>
           </div>
 
@@ -210,12 +213,12 @@
           >
             <div class="flex gap-2">
               <div
-                class="w-[20px] h-[20px] bg-[url('./side/gravity-ui_person-gear.png')]"
+                class="w-[20px] h-[20px] bg-[url('./side/gravity-ui_person-gear.svg')]"
               ></div>
               <span>Engineers</span>
             </div>
             <div
-              class="toggle-submenu w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.png')]"
+              class="toggle-submenu w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.svg')]"
             ></div>
           </div>
 
@@ -229,12 +232,12 @@
           >
             <div class="flex gap-2">
               <div
-                class="w-[20px] h-[20px] bg-[url('./side/icon-park-outline_pay-code.png')]"
+                class="w-[20px] h-[20px] bg-[url('./side/icon-park-outline_pay-code.svg')]"
               ></div>
               <span>Product Codes</span>
             </div>
             <div
-              class="w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.png')]"
+              class="w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.svg')]"
             ></div>
           </div>
 
@@ -247,11 +250,11 @@
             class="menu-item flex justify-between rounded-md p-2 text-[12px] text-textbase"
           >
             <div class="flex gap-2">
-              <div class="w-[20px] h-[20px] bg-[url('./side/Group.png')]"></div>
+              <div class="w-[20px] h-[20px] bg-[url('./side/Group.svg')]"></div>
               <span>Quotes</span>
             </div>
             <div
-              class="w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.png')]"
+              class="w-[20px] h-[20px] rounded-full bg-[url('./icon/chevron.svg')]"
             ></div>
           </div>
 
@@ -265,33 +268,25 @@
           <div class="">
             <div class="flex justify-between items-center px-[28px] py-[40px]">
               <div class="font-semibold text-[28px]">Dashboard</div>
-              <button
-                class="bg-basecolor flex px-[18px] py-[12px] text-[18px] font-semibold px-2 text-white p-1 rounded-full shadow-md cursor-pointer"
-              >
+              <button class="bg-basecolor flex px-[18px] py-[12px] text-[18px] font-semibold px-2 text-white p-1 rounded-full shadow-md cursor-pointer">
                 + Add Widget
               </button>
             </div>
+
             <div class="flex gap-4 px-[28px]">
               <div class="w-1/2 flex flex-col gap-4">
                 <div class="shadow rounded-lg">
-                  <div
-                    class="relative bg-[#F8F9FB] rounded-lg p-2 border-red-500 flex items-center gap-2 font-semibold justify-between"
-                  >
+                  <div class="relative bg-[#F8F9FB] rounded-lg p-2 border-red-500 flex items-center gap-2 font-semibold justify-between">
                     <div class="absolute -left-0.5 top-2 gap-2 items-center">
-                      <div
-                        class="w-[6px] h-[40px] bg-[#F66160] rounded-full"
-                      ></div>
-                     
+                      <div class="w-[6px] h-[40px] bg-[#F66160] rounded-full"></div>
                     </div>
                     <span class="px-[10px] py-[8px]">Action Items Assigned</span>
                     <div class="flex items-center px-2 pe-2 w-[40px]">
-                      <img src="./assets/more.png"/>
+                      <img src="./assets/more.svg"/>
                     </div>
                   </div>
                   <div class="bg-white p-4 rounded-b-lg ">
-                    <div
-                      class="border rounded-lg border-[#DBDFE2] text-[#64748B] overflow-auto"
-                    >
+                    <div class="border rounded-lg border-[#DBDFE2] text-[#64748B] overflow-auto">
                       <table class="w-full">
                         <thead >
                           <tr class="text-[12px] border-b border-[#DBDFE2]">
@@ -330,17 +325,13 @@
                             <td class="p-2" align="left">Normal</td>
                             <td class="p-2" align="left">03/31/2025</td>
                             <td class="p-2" align="left">
-                              <a href="#" class="text-blue-500"
-                                >Application #32345</a
-                              >
+                              <a href="#" class="text-blue-500">Application #32345</a>
                             </td>
                           </tr>
                          
                         </tbody>
                       </table>
-                      <div
-                        class="flex justify-between items-center p-2 text-[12px]"
-                      >
+                      <div class="flex justify-between items-center p-2 text-[12px]">
                         <div class="flex items-center gap-4">
                           <span class="text-gray-700">Items per page:</span>
                           <select class="border border-gray-300 rounded p-1">
@@ -349,9 +340,11 @@
                             <option>50</option>
                           </select>
                           <span class="text-gray-700">1 of 100</span>
-                          <div
-                            class="w-[24px] h-[24px] bg-[url('./side/client.svg')] bg-size-[24px]"
-                          ></div>
+                          <div class="flex gap-[8px]">
+                            <div class="w-[24px] h-[24px] bg-[url('./assets/table/fluent_arrow-prev-12-regular.svg')] bg-size-[24px]"></div>
+                            <div class="w-[24px] h-[24px] bg-[url('./assets/table/ion_chevron-left.svg')] bg-size-[24px]"></div>
+                            <div class="w-[24px] h-[24px] bg-[url('./assets/table/ion_chevron-right.svg')] bg-size-[24px]"></div>
+                            <div class="w-[24px] h-[24px] bg-[url('./assets/table/fluent_arrow-next-12-regular.svg')] bg-size-[24px]"></div></div>
                         </div>
                       </div>
                     </div>
@@ -368,141 +361,98 @@
                       Application Statuses Chart
                     </div>
                     <div class="flex items-center px-2 pe-2 w-[40px]">
-                      <img src="./more.png"/>
+                      <img src="./assets/more.svg" />
                     </div>
                   </div>
                   <div class="bg-white p-8">
-                    <img src="./chart.png" />
+                    <img src="./assets/chart.svg" />
                   </div>
                 </div>
               </div>
+
               <div class="w-1/2 flex flex-col gap-4">
-                <div class="shadow rounded-lg overflow-clip">
-                  <div
-                    class="bg-[#F8F9FB] p-2 border-red-500 flex items-center gap-2 font-bold justify-between"
-                  >
-                    <div class="flex gap-2 items-center">
-                      <div
-                        class="w-[6px] h-[32px] bg-orange-500 rounded-full"
-                      ></div>
-                      Action Items Assigned
+                
+                <div class="shadow rounded-lg">
+                  <div class="relative bg-[#F8F9FB] rounded-lg p-2 border-red-500 flex items-center gap-2 font-semibold justify-between">
+                    <div class="absolute -left-0.5 top-2 gap-2 items-center">
+                      <div class="w-[6px] h-[40px] bg-[#FCA160] rounded-full"></div>
                     </div>
-                   <div class="flex items-center px-2 pe-2 w-[40px]">
-                      <img src="./more.png"/>
+                    <span class="px-[10px] py-[8px]">Action Items Assigned</span>
+                    <div class="flex items-center px-2 pe-2 w-[40px]">
+                      <img src="./assets/more.svg" />
                     </div>
                   </div>
-                  <div class="bg-white p-4">
-                    <div
-                      class="border rounded-lg border-[#DBDFE2] text-[#64748B] overflow-auto"
-                    >
+                  <div class="bg-white p-4 rounded-b-lg ">
+                    <div class="border rounded-lg border-[#DBDFE2] text-[#64748B] overflow-auto">
                       <table class="w-full">
-                        <thead class="p-2">
+                        <thead>
                           <tr class="text-[12px] border-b border-[#DBDFE2]">
-                            <th class="p-2">Id</th>
-                            <th class="p-2">Description</th>
-                            <th class="p-2">Status</th>
-                            <th class="p-2">Type</th>
-                            <th class="p-2">Priority</th>
-                            <th class="p-2">Due Date</th>
-                            <th class="p-2">Go To</th>
+                            <th class="p-2" align="left">Id</th>
+                            <th class="p-2" align="left">Description</th>
+                            <th class="p-2" align="left">Status</th>
+                            <th class="p-2" align="left">Type</th>
+                            <th class="p-2" align="left">Priority</th>
+                            <th class="p-2" align="left">Due Date</th>
+                            <th class="p-2" align="left">Go To</th>
                           </tr>
                         </thead>
                         <tbody class="text-[12px]">
-                          <tr class="bg-white hover:bg-gray-200">
-                            <td class="p-2">113</td>
-                            <td class=""></td>
-                            <td class="">
+                          <tr class="bg-white hover:bg-gray-200 border-b border-[#DBDFE2]">
+                            <td class="p-2" align="left">113</td>
+                            <td class="p-2 text-[#323232]" align="left">Please cancel File MX-15014 due to Client Request. Payment not done.</td>
+                            <td class="p-2" align="left">
                               <a href="#" class="text-blue-500">Pending</a>
                             </td>
-                            <td class="">Billing</td>
-                            <td class="">Normal</td>
-                            <td class="">03/31/2025</td>
-                            <td class="">
-                              <a href="#" class="text-blue-500"
-                                >Application #32345</a
-                              >
+                            <td class="p-2" align="left">Billing</td>
+                            <td class="p-2" align="left">Normal</td>
+                            <td class="p-2" align="left">03/31/2025</td>
+                            <td class="p-2" align="left">
+                              <a href="#" class="text-blue-500">Application #32345</a>
                             </td>
                           </tr>
-                          <tr class="bg-gray-100 hover:bg-gray-200">
-                            <td class="p-2">114</td>
-                            <td class=""></td>
-                            <td class="">
+                          <tr class="bg-white hover:bg-gray-200  border-b border-[#DBDFE2]">
+                            <td class="p-2" align="left">114</td>
+                            <td class="p-2" align="left"></td>
+                            <td class="p-2" align="left">
+                              <a href="#" class="text-blue-500">File Cancelation Request</a>
+                            </td>
+                            <td class="p-2" align="left">Billing</td>
+                            <td class="p-2" align="left">Normal</td>
+                            <td class="p-2" align="left">03/31/2025</td>
+                            <td class="p-2" align="left">
+                              <a href="#" class="text-blue-500">Application #32345</a>
+                            </td>
+                          </tr>
+                          <tr class="bg-white hover:bg-gray-200  border-b border-[#DBDFE2]">
+                            <td class="p-2" align="left">115</td>
+                            <td class="p-2" align="left"></td>
+                            <td class="p-2" align="left">
                               <a href="#" class="text-blue-500">Pending</a>
                             </td>
-                            <td class="">Billing</td>
-                            <td class="">Normal</td>
-                            <td class="">03/31/2025</td>
-                            <td class="">
-                              <a href="#" class="text-blue-500"
-                                >Application #32345</a
-                              >
+                            <td class="p-2" align="left">Billing</td>
+                            <td class="p-2" align="left">Normal</td>
+                            <td class="p-2" align="left">03/31/2025</td>
+                            <td class="p-2" align="left">
+                              <a href="#" class="text-blue-500">Application #32345</a>
                             </td>
                           </tr>
-                          <tr class="bg-gray-100 hover:bg-gray-200">
-                            <td class="p-2">114</td>
-                            <td class=""></td>
-                            <td class="">
+                          <tr class="bg-white hover:bg-gray-200  border-b border-[#DBDFE2]">
+                            <td class="p-2" align="left">114</td>
+                            <td class="p-2" align="left"></td>
+                            <td class="p-2" align="left">
                               <a href="#" class="text-blue-500">Pending</a>
                             </td>
-                            <td class="">Billing</td>
-                            <td class="">Normal</td>
-                            <td class="">03/31/2025</td>
-                            <td class="">
-                              <a href="#" class="text-blue-500"
-                                >Application #32345</a
-                              >
+                            <td class="p-2" align="left">Billing</td>
+                            <td class="p-2" align="left">Normal</td>
+                            <td class="p-2" align="left">03/31/2025</td>
+                            <td class="p-2" align="left">
+                              <a href="#" class="text-blue-500">Application #32345</a>
                             </td>
                           </tr>
-                          <tr class="bg-gray-100 hover:bg-gray-200">
-                            <td class="p-2">114</td>
-                            <td class=""></td>
-                            <td class="">
-                              <a href="#" class="text-blue-500">Pending</a>
-                            </td>
-                            <td class="">Billing</td>
-                            <td class="">Normal</td>
-                            <td class="">03/31/2025</td>
-                            <td class="">
-                              <a href="#" class="text-blue-500"
-                                >Application #32345</a
-                              >
-                            </td>
-                          </tr>
-                          <tr class="bg-gray-100 hover:bg-gray-200">
-                            <td class="p-2">114</td>
-                            <td class=""></td>
-                            <td class="">
-                              <a href="#" class="text-blue-500">Pending</a>
-                            </td>
-                            <td class="">Billing</td>
-                            <td class="">Normal</td>
-                            <td class="">03/31/2025</td>
-                            <td class="">
-                              <a href="#" class="text-blue-500"
-                                >Application #32345</a
-                              >
-                            </td>
-                          </tr>
-                          <tr class="bg-gray-100 hover:bg-gray-200">
-                            <td class="p-2">114</td>
-                            <td class=""></td>
-                            <td class="">
-                              <a href="#" class="text-blue-500">Pending</a>
-                            </td>
-                            <td class="">Billing</td>
-                            <td class="">Normal</td>
-                            <td class="">03/31/2025</td>
-                            <td class="">
-                              <a href="#" class="text-blue-500"
-                                >Application #32345</a
-                              >
-                            </td>
-                          </tr>
+                
                         </tbody>
                       </table>
-                      <div
-                        class="flex justify-between items-center p-2 text-[12px]"
-                      >
+                      <div class="flex justify-between items-center p-2 text-[12px]">
                         <div class="flex items-center gap-4">
                           <span class="text-gray-700">Items per page:</span>
                           <select class="border border-gray-300 rounded p-1">
@@ -510,111 +460,81 @@
                             <option>20</option>
                             <option>50</option>
                           </select>
-                          <span class="text-gray-700">10 of 100</span>
-                          <div
-                            class="w-[24px] h-[24px] bg-[url('./side/icon-park-outline_pay-code.png')] bg-contain bg-no-repeat"
-                          ></div>
+                          <span class="text-gray-700">1 of 100</span>
+                          <div class="flex gap-[8px]">
+                            <div class="w-[24px] h-[24px] bg-[url('./assets/table/fluent_arrow-prev-12-regular.svg')] bg-size-[24px]">
+                            </div>
+                            <div class="w-[24px] h-[24px] bg-[url('./assets/table/ion_chevron-left.svg')] bg-size-[24px]"></div>
+                            <div class="w-[24px] h-[24px] bg-[url('./assets/table/ion_chevron-right.svg')] bg-size-[24px]"></div>
+                            <div class="w-[24px] h-[24px] bg-[url('./assets/table/fluent_arrow-next-12-regular.svg')] bg-size-[24px]">
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="shadow rounded-lg overflow-clip">
-                  <div
-                    class="bg-[#F8F9FB] p-2 border-red-500 flex items-center gap-2 font-bold justify-between"
-                  >
-                    <div class="flex gap-2 items-center">
-                      <div
-                        class="w-[6px] h-[32px] bg-blue-500 rounded-full"
-                      ></div>
-                      My Notification
+
+                <div class="shadow rounded-lg">
+                  <div class="relative bg-[#F8F9FB] rounded-lg p-2 border-red-500 flex items-center gap-2 font-semibold justify-between">
+                    <div class="absolute -left-0.5 top-2 gap-2 items-center">
+                      <div class="w-[6px] h-[40px] bg-[#3B74DE] rounded-full"></div>
                     </div>
-                   <div class="flex items-center px-2 pe-2 w-[40px]">
-                      <img src="./more.png"/>
+                    <span class="px-[10px] py-[8px]">My Notification</span>
+                    <div class="flex items-center px-2 pe-2 w-[40px]">
+                      <img src="./assets/more.svg" />
                     </div>
                   </div>
-                  <div class="bg-white p-4">
-                    <div
-                      class="border rounded-lg border-[#DBDFE2] text-[#64748B] overflow-auto"
-                    >
+                  <div class="bg-white p-4 rounded-b-lg ">
+                    <div class="border rounded-lg border-[#DBDFE2] text-[#64748B] overflow-auto">
                       <table class="w-full">
-                        <thead class="p-2">
+                        <thead>
                           <tr class="text-[12px] border-b border-[#DBDFE2]">
-                            <th class="p-2">Id</th>
-                            <th class="p-2">Description</th>
-                            <th class="p-2">Status</th>
-                            <th class="p-2">Type</th>
-                            <th class="p-2">Priority</th>
-                            <th class="p-2">Due Date</th>
-                            <th class="p-2">Go To</th>
+                            <th class="p-2" align="left">Message</th>
+                            <th class="p-2" align="left">Recipients</th>
+                            <th class="p-2" align="left">Priority</th>
+                            <th class="p-2" align="left">Status</th>
+                            <th class="p-2" align="left">Date/Time</th>
+                            <th class="p-2" align="left"></th>
                           </tr>
                         </thead>
                         <tbody class="text-[12px]">
-                          <tr class="bg-white hover:bg-gray-200">
-                            <td class="p-2">113</td>
-                            <td class=""></td>
-                            <td class="">
-                              <a href="#" class="text-blue-500">Pending</a>
-                            </td>
-                            <td class="">Billing</td>
-                            <td class="">Normal</td>
-                            <td class="">03/31/2025</td>
-                            <td class="">
-                              <a href="#" class="text-blue-500"
-                                >Application #32345</a
-                              >
+                          <tr class="bg-white hover:bg-gray-200 border-b border-[#DBDFE2]">
+                            <td class="p-2" align="left">An action item #179 is assigned to you on File #MX-15014.</td>
+                            <td class="p-2 text-[#323232]" align="left">R&TPlumbingCertificationAdmin User</td>
+                            <td class="p-2" align="left">Normal</td>
+                            <td class="p-2 text-[#9C6ED3]" align="left">Unread</td>
+                            <td class="p-2" align="left">03/31/2025</td>
+                            <td class="p-2" align="left">
+                              <img w-[18px] h-[18px] src="./assets/edit.svg" />
                             </td>
                           </tr>
-                          <tr class="bg-gray-100 hover:bg-gray-200">
-                            <td class="p-2">114</td>
-                            <td class=""></td>
-                            <td class="">
-                              <a href="#" class="text-blue-500">Pending</a>
-                            </td>
-                            <td class="">Billing</td>
-                            <td class="">Normal</td>
-                            <td class="">03/31/2025</td>
-                            <td class="">
-                              <a href="#" class="text-blue-500"
-                                >Application #32345</a
-                              >
+
+                          <tr class="bg-white hover:bg-gray-200 border-b border-[#DBDFE2]">
+                            <td class="p-2" align="left"></td>
+                            <td class="p-2 text-[#323232]" align="left">Normal</td>
+                            <td class="p-2" align="left">Medium</td>
+                            <td class="p-2 text-[#105AA1]" align="left">Pending</td>
+                            <td class="p-2" align="left">03/31/2025</td>
+                            <td class="p-2" align="left">
+                              <img w-[18px] h-[18px] src="./assets/edit.svg" />
                             </td>
                           </tr>
-                          <tr class="bg-gray-100 hover:bg-gray-200">
-                            <td class="p-2">114</td>
-                            <td class=""></td>
-                            <td class="">
-                              <a href="#" class="text-blue-500">Pending</a>
-                            </td>
-                            <td class="">Billing</td>
-                            <td class="">Normal</td>
-                            <td class="">03/31/2025</td>
-                            <td class="">
-                              <a href="#" class="text-blue-500"
-                                >Application #32345</a
-                              >
+
+                          <tr class="bg-white hover:bg-gray-200 border-b border-[#DBDFE2]">
+                            <td class="p-2" align="left"></td>
+                            <td class="p-2 text-[#323232]" align="left">Normal</td>
+                            <td class="p-2" align="left">Normal</td>
+                            <td class="p-2 text-[#105AA1]" align="left">Pending</td>
+                            <td class="p-2" align="left">03/31/2025</td>
+                            <td class="p-2" align="left">
+                              <img w-[18px] h-[18px] src="./assets/edit.svg" />
                             </td>
                           </tr>
-                          <tr class="bg-gray-100 hover:bg-gray-200">
-                            <td class="p-2">114</td>
-                            <td class=""></td>
-                            <td class="">
-                              <a href="#" class="text-blue-500">Pending</a>
-                            </td>
-                            <td class="">Billing</td>
-                            <td class="">Normal</td>
-                            <td class="">03/31/2025</td>
-                            <td class="">
-                              <a href="#" class="text-blue-500"
-                                >Application #32345</a
-                              >
-                            </td>
-                          </tr>
+                
                         </tbody>
                       </table>
-                      <div
-                        class="flex justify-between items-center p-2 text-[12px]"
-                      >
+                      <div class="flex justify-between items-center p-2 text-[12px]">
                         <div class="flex items-center gap-4">
                           <span class="text-gray-700">Items per page:</span>
                           <select class="border border-gray-300 rounded p-1">
@@ -622,221 +542,21 @@
                             <option>20</option>
                             <option>50</option>
                           </select>
-                          <span class="text-gray-700">10 of 100</span>
-                          <div
-                            class="w-[24px] h-[24px] bg-[url('./side/icon-park-outline_pay-code.png')] bg-contain bg-no-repeat"
-                          ></div>
+                          <span class="text-gray-700">1 of 100</span>
+                          <div class="flex gap-[8px]">
+                            <div class="w-[24px] h-[24px] bg-[url('./assets/table/fluent_arrow-prev-12-regular.svg')] bg-size-[24px]">
+                            </div>
+                            <div class="w-[24px] h-[24px] bg-[url('./assets/table/ion_chevron-left.svg')] bg-size-[24px]"></div>
+                            <div class="w-[24px] h-[24px] bg-[url('./assets/table/ion_chevron-right.svg')] bg-size-[24px]"></div>
+                            <div class="w-[24px] h-[24px] bg-[url('./assets/table/fluent_arrow-next-12-regular.svg')] bg-size-[24px]">
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="grid grid-cols-2 gap-4">
-              <!-- <div class="shadow rounded-lg overflow-clip">
-                <div class="bg-[#F8F9FB] p-2 border-red-500 flex items-center gap-2  font-bold">
-                  <div class="w-[6px] h-[32px] bg-red-500 rounded-full"></div>
-                  Action Items Assigned
-                </div>
-                <div class="bg-white p-6">
-
-                  <table class="min-w-full bg-white rounded-lg overflow-hidden">
-                    <thead class="table-auto w-full">
-                      <tr class="text-left border border-gray-300 border-radius">
-                        <th class="py-2 px-4 border-b border-gray-300">Id</th>
-                        <th class="py-2 px-4 border-b border-gray-300">Description</th>
-                        <th class="py-2 px-4 border-b border-gray-300">Status</th>
-                        <th class="py-2 px-4 border-b border-gray-300">Type</th>
-                        <th class="py-2 px-4 border-b border-gray-300">Priority</th>
-                        <th class="py-2 px-4 border-b border-gray-300">Due Date</th>
-                        <th class="py-2 px-4 border-b border-gray-300">Go To</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="bg-white hover:bg-gray-200">
-                          <td class="py-2 px-4 border-b border-gray-300">113</td>
-                          <td class="py-2 px-4 border-b border-gray-300"></td>
-                          <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Pending</a></td>
-                          <td class="py-2 px-4 border-b border-gray-300">Billing</td>
-                          <td class="py-2 px-4 border-b border-gray-300">Normal</td>
-                          <td class="py-2 px-4 border-b border-gray-300">03/31/2025</td>
-                          <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Application #32345</a></td>
-                        </tr>
-                        <tr class="bg-gray-100 hover:bg-gray-200">
-                          <td class="py-2 px-4 border-b border-gray-300">114</td>
-                          <td class="py-2 px-4 border-b border-gray-300"></td>
-                          <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Pending</a></td>
-                          <td class="py-2 px-4 border-b border-gray-300">Billing</td>
-                          <td class="py-2 px-4 border-b border-gray-300">Normal</td>
-                          <td class="py-2 px-4 border-b border-gray-300">03/31/2025</td>
-                          <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Application #32345</a></td>
-                        </tr>
-                      </tbody>
-                      </table>
-                    <div class="flex justify-between items-center border border-gray-300 p-2">
-                      <div class="flex items-center gap-4">
-                        <span class="text-gray-700">Items per page:</span>
-                        <select class="border border-gray-300 rounded p-1">
-                          <option>10</option>
-                          <option>20</option>
-                          <option>50</option>
-                        </select>
-                        <span class="text-gray-700">10 of 100</span>
-                        <div class="w-[24px] h-[24px] bg-[url('./side/icon-park-outline_pay-code.png')] bg-contain bg-no-repeat"></div>
-                      </div>
-                    </div>
-
-                      </div>
-                     
-              </div> -->
-
-              <!-- <div class="shadow rounded-lg overflow-clip">
-                <div
-                  class="bg-[#F8F9FB] p-2 border-red-500 flex items-center gap-2  font-bold"
-                >
-                  <div class="w-[6px] h-[32px] bg-yellow-500 rounded-full"></div>
-                  Action Items Assigned
-                </div>
-                <div class="bg-white p-6">
-                  <table class="min-w-full bg-white rounded-lg overflow-hidden">
-                    <thead class="table-auto w-full">
-                      <tr class="text-left border border-gray-300 border-radius">
-                        <th class="py-2 px-4 border-b border-gray-300">Id</th>
-                        <th class="py-2 px-4 border-b border-gray-300">Description</th>
-                        <th class="py-2 px-4 border-b border-gray-300">Status</th>
-                        <th class="py-2 px-4 border-b border-gray-300">Type</th>
-                        <th class="py-2 px-4 border-b border-gray-300">Priority</th>
-                        <th class="py-2 px-4 border-b border-gray-300">Due Date</th>
-                        <th class="py-2 px-4 border-b border-gray-300">Go To</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="bg-white hover:bg-gray-200">
-                        <td class="py-2 px-4 border-b border-gray-300">113</td>
-                        <td class="py-2 px-4 border-b border-gray-300"></td>
-                        <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Pending</a></td>
-                        <td class="py-2 px-4 border-b border-gray-300">Billing</td>
-                        <td class="py-2 px-4 border-b border-gray-300">Normal</td>
-                        <td class="py-2 px-4 border-b border-gray-300">03/31/2025</td>
-                        <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Application #32345</a></td>
-                      </tr>
-                      <tr class="bg-gray-100 hover:bg-gray-200">
-                        <td class="py-2 px-4 border-b border-gray-300">114</td>
-                        <td class="py-2 px-4 border-b border-gray-300"></td>
-                        <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Pending</a></td>
-                        <td class="py-2 px-4 border-b border-gray-300">Billing</td>
-                        <td class="py-2 px-4 border-b border-gray-300">Normal</td>
-                        <td class="py-2 px-4 border-b border-gray-300">03/31/2025</td>
-                        <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Application #32345</a></td>
-                      </tr>
-                      <tr class="bg-gray-100 hover:bg-gray-200">
-                        <td class="py-2 px-4 border-b border-gray-300">115</td>
-                        <td class="py-2 px-4 border-b border-gray-300"></td>
-                        <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Pending</a></td>
-                        <td class="py-2 px-4 border-b border-gray-300">Billing</td>
-                        <td class="py-2 px-4 border-b border-gray-300">Normal</td>
-                        <td class="py-2 px-4 border-b border-gray-300">03/31/2025</td>
-                        <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Application #32345</a></td>
-                      </tr>
-                      <tr class="bg-gray-100 hover:bg-gray-200">
-                        <td class="py-2 px-4 border-b border-gray-300">116</td>
-                        <td class="py-2 px-4 border-b border-gray-300"></td>
-                        <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Pending</a></td>
-                        <td class="py-2 px-4 border-b border-gray-300">Billing</td>
-                        <td class="py-2 px-4 border-b border-gray-300">Normal</td>
-                        <td class="py-2 px-4 border-b border-gray-300">03/31/2025</td>
-                        <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Application #32345</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div class="flex justify-between items-center border border-gray-300 p-2">
-                    <div class="flex items-center gap-4">
-                      <span class="text-gray-700">Items per page:</span>
-                      <select class="border border-gray-300 rounded p-1">
-                        <option>10</option>
-                        <option>20</option>
-                        <option>50</option>
-                      </select>
-                      <span class="text-gray-700">10 of 100</span>
-                      <div class="w-[24px] h-[24px] bg-[url('./side/icon-park-outline_pay-code.png')] bg-contain bg-no-repeat"></div>
-                    </div>
-                  </div>
-                  </div>
-              </div> -->
-
-              <!-- <div class="shadow rounded-lg overflow-clip">
-                  <div class="bg-[#F8F9FB] p-2 border-red-500 flex items-center gap-2  font-bold">
-                    <div class="w-[6px] h-[32px] bg-yellow-500 rounded-full"></div>
-                    Action Items Assigned
-                  </div>
-                  <div class="bg-white p-6">
-                    <table class="min-w-full bg-white rounded-lg overflow-hidden">
-                      <thead class="table-auto w-full">
-                        <tr class="text-left border border-gray-300 border-radius">
-                          <th class="py-2 px-4 border-b border-gray-300">Id</th>
-                          <th class="py-2 px-4 border-b border-gray-300">Description</th>
-                          <th class="py-2 px-4 border-b border-gray-300">Status</th>
-                          <th class="py-2 px-4 border-b border-gray-300">Type</th>
-                          <th class="py-2 px-4 border-b border-gray-300">Priority</th>
-                          <th class="py-2 px-4 border-b border-gray-300">Due Date</th>
-                          <th class="py-2 px-4 border-b border-gray-300">Go To</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="bg-white hover:bg-gray-200">
-                          <td class="py-2 px-4 border-b border-gray-300">113</td>
-                          <td class="py-2 px-4 border-b border-gray-300"></td>
-                          <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Pending</a></td>
-                          <td class="py-2 px-4 border-b border-gray-300">Billing</td>
-                          <td class="py-2 px-4 border-b border-gray-300">Normal</td>
-                          <td class="py-2 px-4 border-b border-gray-300">03/31/2025</td>
-                          <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Application #32345</a></td>
-                        </tr>
-                        <tr class="bg-gray-100 hover:bg-gray-200">
-                          <td class="py-2 px-4 border-b border-gray-300">114</td>
-                          <td class="py-2 px-4 border-b border-gray-300"></td>
-                          <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Pending</a></td>
-                          <td class="py-2 px-4 border-b border-gray-300">Billing</td>
-                          <td class="py-2 px-4 border-b border-gray-300">Normal</td>
-                          <td class="py-2 px-4 border-b border-gray-300">03/31/2025</td>
-                          <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Application #32345</a></td>
-                        </tr>
-                        <tr class="bg-gray-100 hover:bg-gray-200">
-                          <td class="py-2 px-4 border-b border-gray-300">115</td>
-                          <td class="py-2 px-4 border-b border-gray-300"></td>
-                          <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Pending</a></td>
-                          <td class="py-2 px-4 border-b border-gray-300">Billing</td>
-                          <td class="py-2 px-4 border-b border-gray-300">Normal</td>
-                          <td class="py-2 px-4 border-b border-gray-300">03/31/2025</td>
-                          <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Application #32345</a></td>
-                        </tr>
-                        <tr class="bg-gray-100 hover:bg-gray-200">
-                          <td class="py-2 px-4 border-b border-gray-300">116</td>
-                          <td class="py-2 px-4 border-b border-gray-300"></td>
-                          <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Pending</a></td>
-                          <td class="py-2 px-4 border-b border-gray-300">Billing</td>
-                          <td class="py-2 px-4 border-b border-gray-300">Normal</td>
-                          <td class="py-2 px-4 border-b border-gray-300">03/31/2025</td>
-                          <td class="py-2 px-4 border-b border-gray-300"><a href="#" class="text-blue-500">Application #32345</a></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <div class="flex justify-between items-center border border-gray-300 p-2">
-                      <div class="flex items-center gap-4">
-                        <span class="text-gray-700">Items per page:</span>
-                        <select class="border border-gray-300 rounded p-1">
-                          <option>10</option>
-                          <option>20</option>
-                          <option>50</option>
-                        </select>
-                        <span class="text-gray-700">10 of 100</span>
-                        <div class="w-[24px] h-[24px] bg-[url('./side/icon-park-outline_pay-code.png')] bg-contain bg-no-repeat"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
             </div>
           </div>
         </div>
@@ -847,9 +567,7 @@
     <script>
       $(document).ready(function () {
         $(".menu-item").on("click", function () {
-          $(".menu-item")
-            .removeClass("bg-white text-black")
-            .addClass("text-[#062D6B]");
+          $(".menu-item").removeClass("bg-white text-black").addClass("text-textbase");
           $(this).addClass("bg-white text-[#062D6B] font-semibold").removeClass("text-textbase");
 
           $(this).next(".submenu").slideToggle(200);
